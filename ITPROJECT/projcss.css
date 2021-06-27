@@ -7,9 +7,61 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.top-bar{
+	background: #00325a;
+}
+.left-top{
+	padding: 2px 0px;
+}
+.email-box{
+	display: inline-block;
+	margin-right: 20px;
+}
+.email-box a{
+	color: #fff;
+	font-size: 15px;
+}
+
+.email-box a i{
+	padding: 0px 5px;
+}
+.phone-box{
+	display: inline-block;
+}
+
+.phone-box a{
+	color: #fff;
+	font-size: 15px;
+}
+
+.phone-box a i{
+	padding: 0px 5px;
+}
+  .address-box{
+    display: inline-block;
+  }
+  .address-box a{
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 410px
+  }
+  .address-box a i{
+    padding: 0px 5px;
+  }
+  .drop-box{
+    display: inline-block;
+  }
+  .drop-box a{
+    color: #fff;
+    font-size: 15px;
+    padding:right
+  }
+  .drop-box a i{
+    padding: 0px 5px;
+  }
 body{
-    background-color:#28d9a1;
-    color:#000;
+  background-color:#485461;
+  background-image:linear-gradient(135deg,#485461 10%, #28313b 74%);
 }
 html{
     scroll-behavior: smooth;
@@ -37,7 +89,7 @@ section{
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family:times new roman;
-    color:#1a24d6;
+    color: white;
 }
 .about .about-content,
 .services .serv-content,
@@ -78,7 +130,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 .navbar{
-    position: fixed;
+    position:absolute;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
@@ -87,7 +139,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background:#851cab ;
+    background: #2F2626 ;
 }
 .navbar .max-width{
     display: flex;
@@ -98,9 +150,10 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    display: left;
 }
 .navbar .logo a span{
-    color:#851cab ;
+    color: #ed4779;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -134,7 +187,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background:#851cab;
+    background: GREY;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -151,15 +204,16 @@ section .title::after{
 }
 .scroll-up-btn.show{
     bottom: 30px;
-    opacity: 1;
+    opacity: 50;
     pointer-events: auto;
 }
 .scroll-up-btn:hover{
-    filter: brightness(90%);
+    filter: brightness(100%);
 }
 .home{
     display: flex;
-    background: url("https://dl.dropbox.com/s/d6arylclf6k88wb/hacker.png") no-repeat center;
+    background-color:#485461;
+    background-image:linear-gradient(135deg,#485461 10%, #28313b 74%);
     height: 100vh;
     color:#fff ;
     min-height: 500px;
@@ -202,14 +256,18 @@ section .title::after{
     color: crimson;
     background: none;
 }
+.about{
+  background: #454746;
+}
 .about .title::after{
-    content: "Who are we";
+    content: "Our Mission";
     color:crimson;
     background:#fff;
     border-radius:2px;
     border:none;
 }
 .about .about-content .left{
+    color:#fff;
     width: 45%;
 }
 .about .about-content .left img{
@@ -234,25 +292,25 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background:#851cab;
-    color:#fff;
+    background: white;
+    color: black;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #851cab;
+    border: 2px solid blue;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
     color: crimson;
-    background: none;
+    background: #454746;
 }
 
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background:#454746;
 }
 .services .title::before,
 .teams .title::before{
@@ -376,9 +434,12 @@ section .title::after{
 .teams .title::after{
     content: "Our Team";
 }
-.teams .carousel .card{
+.teams{
+    margin: auto 0 auto 0;
+  }
 
-    background: #222;
+.teams .carousel .card{
+    background: #222  ;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
